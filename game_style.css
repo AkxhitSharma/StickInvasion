@@ -172,5 +172,5 @@ ul{
 .end{
     background-image : url("./Images/game_end_bg.png");
     background-size: cover;
-    transition-duration: 2s;
+    transition-duration: 1s;
 }
