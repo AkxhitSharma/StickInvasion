@@ -1,0 +1,176 @@
+@font-face {
+    font-family: 'manticoreregular';
+    src: url('manticore-webfont.woff2') format('woff2'),
+         url('manticore-webfont.woff') format('woff');
+    font-weight:normal;
+    font-style:normal;
+
+}
+
+.cont1{
+    width: 200px;
+    height:140px;
+    position: absolute;
+    bottom: 11%;
+    
+}
+.cont2{
+    width: 860px;
+    height: 136px;
+    position: absolute;
+    bottom: 10%;
+    right: 11%;
+}
+.head{
+    top: 2%;
+    width: 50px;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    height: 50px;
+    position: relative;
+    left: 3.5%;
+    border-radius: 50%;
+    
+}
+.body{
+    width: 10px;
+    background-color: rgb(0, 0, 0);
+    height: 50px;
+    left: 4%;
+    position: absolute;
+    animation-name: back_b;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.car{
+    position:absolute;
+    display: inline-flex;
+    left: 0%;
+    z-index: 0px;
+    height: 95px;
+    animation-name: back1;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+.gun{
+    width: 60px;
+    top: 50%;
+    background-color: rgb(0, 0, 0);
+    height: 5px;
+    left: 150px;
+    position: absolute;
+    border-top-right-radius: 80%;
+    border-top-left-radius: 40%;
+    /*animation-name: back_c;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in;*/
+}
+/*
+
+@keyframes back_c {
+    0%{
+        left:12%;
+    }
+
+    100%{
+        left: 93%;
+    }
+}
+
+@keyframes back_b {
+    50%{
+        left:50%;
+    }
+
+    100%{
+        left: 100%;
+    }
+}
+@keyframes back1 {
+    50%{
+        left:40%;
+    }
+
+    100%{
+        left: 90%;
+    }
+}*/
+
+body{
+    background-image: url("./Images/game\ bg.png");
+    background-size: cover;
+}
+.shot{
+    width: 30px;
+    height: 30px;
+    top: 3%;
+    margin-left: 80%;
+    background-color: rgb(247, 138, 236);
+    border-radius: 50%;
+    animation-name: bullet;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in;
+}
+@keyframes bullet {
+    0%{
+        margin-left: 72%;
+    }
+    100%{
+        margin-left: 3%;
+    }
+    
+}
+
+.bullets{
+    width: 50px;
+    height: 90px;
+    float: right;
+    margin-right: 30.1px;
+    margin-top: 12.7%;
+    align-items: center;
+    
+
+}
+ul{
+    list-style: none;
+    display: flex;
+}
+.arc{
+    width: 50px;
+    height: 90px;
+    border-radius: 100px;
+    background-color: rgb(0, 0, 0);
+    margin-right: 30.1px;
+    margin-top: 12.7%;
+    float: right;
+}
+.hide{
+    display: none;
+}
+
+.clic , .won , .lost{
+    width: 300px;
+    height: auto;
+    background-color: rgb(251, 6, 6);
+    position: absolute;
+    text-align: center;
+    margin-top: 30%;
+    margin-left: 40%;
+    border-radius: 200px;
+    
+}
+.clic:hover{
+    background-color: rgb(142, 211, 248);
+}
+.end{
+    background-image : url("./Images/game_end_bg.png");
+    background-size: cover;
+    transition-duration: 2s;
+}
