@@ -51,7 +51,7 @@ function kill(g){
         bullet.classList.remove('bullet');
         body.classList.add('end');
         cont2.removeChild(cont2.firstChild);
-        body.addEventListener('click',finale);
+        finale();
     }
     if(h_rect.x + h_rect.width > s_rect.x + s_rect.width ){
         lost.classList.remove('hide');
