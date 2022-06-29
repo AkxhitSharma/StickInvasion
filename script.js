@@ -71,8 +71,8 @@ function launch(){
 function finale(){
     if(target.length===0){
         won.classList.remove('hide');
-        cont1.classList.add("hide");
-        cont2.classList.add("hide");
+        //cont1.classList.add("hide");
+        //cont2.classList.add("hide");
         
     }
 
